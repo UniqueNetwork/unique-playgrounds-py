@@ -2,8 +2,8 @@ import time
 import unittest
 
 
-from playgrounds.unique import UniqueHelper
-from playgrounds.types_system import AccountBalance
+from unique_playgrounds import UniqueHelper
+from unique_playgrounds.types_system import AccountBalance
 
 
 class BalanceTestCase(unittest.TestCase):

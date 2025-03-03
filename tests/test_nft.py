@@ -2,7 +2,7 @@ import time
 import unittest
 
 
-from playgrounds.unique import UniqueHelper
+from unique_playgrounds import UniqueHelper
 
 
 class NFTTestCase(unittest.TestCase):

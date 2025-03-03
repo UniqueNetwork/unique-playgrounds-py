@@ -4,7 +4,7 @@ import scalecodec
 import substrateinterface
 from substrateinterface.utils.ss58 import ss58_encode, ss58_decode
 
-from playgrounds import types_unique, types_system
+from unique_playgrounds import types_unique, types_system
 
 
 __all__ = ['UniqueHelper']
