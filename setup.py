@@ -33,11 +33,11 @@ setuptools.setup(
     version="0.0.1",
     author="UniqueNetwork",
     author_email="pypi@unique.network",
-    description="",
+    description="A helper class for working with the Unique Network blockchain.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/UniqueNetwork/unique-playgrounds-py",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=["tests"]),
     install_requires=requirements,
     classifiers=[
         "Programming Language :: Python :: 3 :: Only",
