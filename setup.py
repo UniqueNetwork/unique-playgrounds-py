@@ -30,7 +30,7 @@ requirements = read_requirements("requirements.txt")
 
 setuptools.setup(
     name="unique-playgrounds-py",
-    version="0.0.1",
+    version="0.0.2",
     author="UniqueNetwork",
     author_email="pypi@unique.network",
     description="A helper class for working with the Unique Network blockchain.",

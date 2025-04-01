@@ -114,6 +114,8 @@ class UniqueHelper(object):
         self.logs.append(log)
         error = self.find_event('System.ExtrinsicFailed', log['events'])
         if error:
+            if 'Module' not in error['attributes']['dispatch_error']:
+                raise SubstrateException(f'Unknown error: {error["attributes"]["dispatch_error"]}')
             module = error['attributes']['dispatch_error']['Module']
             pallet_errors = None
             for pallet in self.api.metadata.pallets:
