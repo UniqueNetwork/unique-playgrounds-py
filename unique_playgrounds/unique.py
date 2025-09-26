@@ -75,6 +75,9 @@ class UniqueHelper(object):
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.disconnect()
 
+    def get_constant(self, module: str, constant: str, at=None):
+        return self.api.get_constant(module, constant, block_hash=at)
+
     def call_query(self, module, method, params=None, at=None):
         return self.api.query(module, method, params=params, block_hash=at)
 
